@@ -1,0 +1,21 @@
+nav ul{
+  list-style: none;
+  padding: 5px;
+  text-align: right; 
+}
+
+nav ul li{
+  display: inline-block;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+aside{
+  text-align: left;
+  
+}
