@@ -28,3 +28,14 @@ if (media > 20){
 } else {
   console.log("Valor menor ou igual a 20");
 }
+
+//Exercício 5
+
+let maiorValor = 0;
+
+for ( let indexMaior = 0; indexMaior < numbers.length; indexMaior += 1){
+  if (numbers[indexMaior] > maiorValor){
+    maiorValor = numbers[indexMaior];
+  }
+}
+console.log("O maior valor é: " + maiorValor);
