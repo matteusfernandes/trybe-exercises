@@ -61,3 +61,12 @@ for (let indexMenor = 0; indexMenor < numbers.length; indexMenor += 1){
   }
 }
 console.log("O menor valor é: " + menorValor);
+
+//Exercício 8
+
+let conjunto = ;
+
+for (let indexCon = 0; indexCon < 26; indexCon += 1){
+  conjunto.push(indexCon);
+}
+console.log(conjunto);
