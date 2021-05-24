@@ -32,3 +32,20 @@ for (let index = 0; index < n; index += 1){
     temp1 = "";
   }
   
+  //Exercício 4
+
+temp = "";
+temp1 = "";
+temp2= "";
+
+for (let index = n; index > 0; index -= 1){
+  for (let indexSecond = (index -1) / 2; indexSecond > 0; indexSecond -= 1){
+    temp1 += " ";
+  }
+  temp += "*";
+  temp2 = temp1;
+  if (index == 1 || index % 2 != 0){
+    console.log(temp1 + temp + temp2);
+  }
+  temp1 = "";
+}
