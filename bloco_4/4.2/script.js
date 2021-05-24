@@ -50,3 +50,14 @@ for (let indexOdd = 0; indexOdd < numbers.length; indexOdd += 1){
   }
 }
 console.log("A quantidade de números ímpar é: " + oddAmount);
+
+//Exercício 7
+
+let menorValor = numbers[0];
+
+for (let indexMenor = 0; indexMenor < numbers.length; indexMenor += 1){
+  if (numbers[indexMenor] < menorValor){
+    menorValor = numbers[indexMenor];
+  }
+}
+console.log("O menor valor é: " + menorValor);
