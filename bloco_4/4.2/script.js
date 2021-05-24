@@ -64,9 +64,15 @@ console.log("O menor valor é: " + menorValor);
 
 //Exercício 8
 
-let conjunto = ;
+let conjunto = [];
 
 for (let indexCon = 0; indexCon < 26; indexCon += 1){
   conjunto.push(indexCon);
 }
 console.log(conjunto);
+
+//Exercício 9
+
+for (let indexDivision = 0; indexDivision < conjunto.length; indexDivision += 1){
+  console.log(conjunto[indexDivision] / 2);
+}
