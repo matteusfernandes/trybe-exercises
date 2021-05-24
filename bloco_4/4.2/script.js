@@ -33,9 +33,20 @@ if (media > 20){
 
 let maiorValor = 0;
 
-for ( let indexMaior = 0; indexMaior < numbers.length; indexMaior += 1){
+for (let indexMaior = 0; indexMaior < numbers.length; indexMaior += 1){
   if (numbers[indexMaior] > maiorValor){
     maiorValor = numbers[indexMaior];
   }
 }
 console.log("O maior valor é: " + maiorValor);
+
+//Exercício 6
+
+let oddAmount = 0;
+
+for (let indexOdd = 0; indexOdd < numbers.length; indexOdd += 1){
+  if (numbers[indexOdd] % 2 === 0){
+    oddAmount += 1;
+  }
+}
+console.log("A quantidade de números ímpar é: " + oddAmount);
