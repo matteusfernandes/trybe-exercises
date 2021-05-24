@@ -14,3 +14,9 @@ for (let indexSoma = 0; indexSoma < numbers.length; indexSoma += 1){
 }
 
 console.log("A soma de todos os elementos do Array é igual a: " + somaTotal);
+
+//Exercício 3
+
+let media = somaTotal / numbers.length;
+
+console.log("A média aritimética dos valores é: " + media);
