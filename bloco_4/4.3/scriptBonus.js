@@ -25,3 +25,24 @@ for (index = n; index > 0; index -= 1) {
   console.log(temp);
   temp = "";
 }*/
+
+//Exercicio 6
+
+number = 20;
+numberOfDivisors = 0;
+isOdd = true;
+
+if (number === 1){
+  isOdd = false;
+} else {
+  for (let index = 0; index <= number; index += 1) {
+    if (number % index === 0) {
+      numberOfDivisors += 1;
+    }
+  }
+  if (numberOfDivisors > 2){
+    isOdd = false;
+  }
+}
+
+console.log(isOdd);
