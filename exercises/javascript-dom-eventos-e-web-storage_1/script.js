@@ -11,6 +11,13 @@ function changeColorSides() {
   } 
 }
 
+function changeColorCenter() {
+  let colorCenter = document.getElementsByClassName('center-content');
+  for (let key in colorCenter){
+    colorCenter[key].style.backgroundColor = 'white';  
+  } 
+}
+
 /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
