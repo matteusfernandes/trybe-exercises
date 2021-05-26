@@ -1,3 +1,9 @@
-document.getElementById('header-container').style.backgroundColor = 'green';
 document.getElementById('container').style.backgroundColor = 'rgb(242 242 242)';
+document.getElementById('header-container').style.backgroundColor = 'green';
 document.getElementById('footer-container').style.backgroundColor = 'rgb(0 51 17)';
+document.querySelector('.emergency-tasks').style.backgroundColor = 'rgb(255 179 179)';
+document.querySelector('.no-emergency-tasks').style.backgroundColor = 'rgb(255 224 102)';
+document.querySelectorAll('.emergency-tasks h3')[0].style.backgroundColor = 'rgb(229 128 255)';
+document.querySelectorAll('.emergency-tasks h3')[1].style.backgroundColor = 'rgb(229 128 255)';
+document.querySelectorAll('.no-emergency-tasks h3')[0].style.backgroundColor = 'black';
+document.querySelectorAll('.no-emergency-tasks h3')[1].style.backgroundColor = 'black';
