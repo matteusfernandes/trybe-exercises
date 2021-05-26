@@ -4,6 +4,12 @@ function amendParagraphs() {
     paragraphs[key].innerText = 'Lorem Ipsum';
   }
 }
+function changeColorSides() {
+  let colorSides = document.getElementsByClassName('main-content');
+  for (let key in colorSides){
+    colorSides[key].style.backgroundColor = 'rgb(76 164 109)';  
+  } 
+}
 
 /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
