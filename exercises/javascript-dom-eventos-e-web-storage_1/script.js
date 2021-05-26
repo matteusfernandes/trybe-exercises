@@ -1,3 +1,10 @@
+function amendParagraphs() {
+  let paragraphs = document.getElementsByTagName('p');
+  for (let key in paragraphs) {
+    paragraphs[key].innerText = 'Lorem Ipsum';
+  }
+}
+
 /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
