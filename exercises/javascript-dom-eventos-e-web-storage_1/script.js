@@ -18,6 +18,11 @@ function changeColorCenter() {
   } 
 }
 
+function correctMainTitle(newTitle) {
+  let title = document.getElementsByTagName('h1');
+  title[0].innerText = newTitle;
+}
+
 /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
