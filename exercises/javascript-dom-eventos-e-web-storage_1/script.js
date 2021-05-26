@@ -23,6 +23,13 @@ function correctMainTitle(newTitle) {
   title[0].innerText = newTitle;
 }
 
+function paragraphsUpperCase() {
+  let paragraphs = document.getElementsByTagName('p');
+  for (let key in paragraphs) {
+    paragraphs[key].style.textTransform = 'uppercase';
+  }
+}
+
 /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
