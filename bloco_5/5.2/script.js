@@ -24,3 +24,18 @@ grandChild.innerText = "Primeiro Netinho";
 firstGrandChild.appendChild(grandChild);
 
 document.querySelector('#primeiroFilhoDoFilho div').parentNode.parentNode.nextElementSibling;
+
+// Conteúdo Parte III
+// Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho . removeChild.removeChild(rmv);
+
+let dad = document.getElementById('pai');
+
+for (let index = dad.childNodes.length - 1; index >= 0; index -= 1) {
+  let currentChild = dad.childNodes[index];
+  if (currentChild.id !== "elementoOndeVoceEsta") {
+    currentChild.remove();
+  }
+}
+
+let segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+segundoEUltimoFilhoDoFilho.remove();
