@@ -22,3 +22,6 @@ document.querySelector('.center-content').appendChild(newParagraph);
 
 // Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
 document.querySelector('.main-content').appendChild(newDiv('left-content'));
+
+// Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
+document.querySelector('.main-content').appendChild(newDiv('right-content'));
