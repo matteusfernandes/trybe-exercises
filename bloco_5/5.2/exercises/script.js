@@ -13,3 +13,6 @@ function newDiv(classe) {
 document.body.appendChild(newDiv('main-content'));
 
 // Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
+let mainContent = document.querySelector('.main-content');
+let centerContent = newDiv('center-content');
+mainContent.appendChild(centerContent);
