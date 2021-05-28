@@ -1,7 +1,7 @@
 // Função que cria título h1,h2,h3... recebendo como parâmentro a tag e o conteúdo.
 function newTitle(tag, text) {
-  title = document.createElement(tag);
-  title.innerText = (text);
+  let title = document.createElement(tag);
+  title.innerText = text;
   return title;
 }
 
@@ -57,3 +57,4 @@ document.querySelector('ul').appendChild(newUlList(itens));
 // function 
 
 // Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
+document.querySelector('.main-content').appendChild(newTitle('h3', 'Título h3'));
