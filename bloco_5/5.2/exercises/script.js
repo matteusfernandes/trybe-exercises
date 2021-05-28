@@ -1,7 +1,12 @@
+// Função que cria título h1,h2,h3... recebendo como parâmentro a tag e o conteúdo.
+function newTitle(tag, text) {
+  title = document.createElement(tag);
+  title.innerText = (text);
+  return title;
+}
+
 //Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
-let newTitle = document.createElement('h1');
-newTitle.innerText = ('Exercício 5.2 - JavaScript DOM como filho da tag body');
-document.body.appendChild(newTitle);
+document.body.appendChild(newTitle('h1', 'Exercício 5.2 - JavaScript DOM como filho da tag body'));
 
 // Função para criar novas Div's recebendo como parâmetro uma sting com o nome da classe
 function newDiv(classe) {
@@ -48,3 +53,7 @@ let newList = document.createElement('ul');
 document.querySelector('.right-content').appendChild(newList);
 let itens = ['1','2','3','4','5','6','7','8','9','10'];
 document.querySelector('ul').appendChild(newUlList(itens));
+
+// function 
+
+// Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
