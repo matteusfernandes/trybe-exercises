@@ -72,3 +72,5 @@ let itens = ['1','2','3','4','5','6','7','8','9','10'];
 document.querySelector('ul').appendChild(newUlList(itens));
 
 // Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+document.querySelector('ul').lastElementChild.remove();
+document.querySelector('ul').lastElementChild.remove();
