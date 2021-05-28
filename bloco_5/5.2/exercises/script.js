@@ -33,6 +33,7 @@ document.querySelector('.main-content').appendChild(newDiv('left-content'));
 
 // Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
 // Adicione a classe description nas 3 tags h3 criadas;
+// Centralize o div criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto do div ;
 document.querySelector('.main-content').appendChild(newDiv('right-content'));
 document.querySelector('.main-content').appendChild(newTitle('h3', 'Título h3'));
 document.querySelector('.main-content').appendChild(newTitle('h3', 'Título h3'));
@@ -40,6 +41,7 @@ document.querySelector('.main-content').appendChild(newTitle('h3', 'Título h3')
 for (let index = 0; index < document.querySelectorAll('h3').length; index += 1) {
   document.querySelectorAll('h3')[index].className = 'description';
 }
+document.querySelector('.right-content').style.marginRight = 'auto';
 
 
 // Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do div criado no passo 5;
@@ -66,6 +68,7 @@ let newList = document.createElement('ul');
 document.querySelector('.right-content').appendChild(newList);
 let itens = ['1','2','3','4','5','6','7','8','9','10'];
 document.querySelector('ul').appendChild(newUlList(itens));
+
 
 // Centralize o div criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto do div ;
 
