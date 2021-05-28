@@ -42,6 +42,7 @@ myWebpage.addEventListener('dblclick', function() {
 
 myWebpage.addEventListener('mouseenter', function() {
   myWebpage.style.color = 'green';
+  window.location.href = "http://matteusfernandes.github.io";
 });
 
 myWebpage.addEventListener('mouseleave', function() {
