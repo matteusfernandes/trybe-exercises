@@ -21,7 +21,9 @@ function newDiv(classe) {
 document.body.appendChild(newDiv('main-content'));
 
 // Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
+// Troque a cor de fundo do elemento pai da div criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
 document.querySelector('.main-content').appendChild(newDiv('center-content'));
+document.querySelector('.center-content').style.backgroundColor = 'green';
 
 //Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
 let newParagraph = document.createElement('p');
@@ -68,10 +70,5 @@ let newList = document.createElement('ul');
 document.querySelector('.right-content').appendChild(newList);
 let itens = ['1','2','3','4','5','6','7','8','9','10'];
 document.querySelector('ul').appendChild(newUlList(itens));
-
-
-// Centralize o div criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto do div ;
-
-// Troque a cor de fundo do elemento pai da div criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
 
 // Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
