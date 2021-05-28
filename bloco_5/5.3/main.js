@@ -29,8 +29,10 @@ function addClassTech() {
 divUm.addEventListener('click', addClassTech);
 divDois.addEventListener('click', addClassTech);
 divTres.addEventListener('click', addClassTech);
-input.ddEventListener('click', addClassTech);
-myWebpage.ddEventListener('click', addClassTech);
+
+myWebpage.addEventListener('dblclick', function() {
+  window.location.href = "http://www.google.com.br";
+});
 
 function resetText(event) {
   // O Event é passado como um parâmetro para a função.
