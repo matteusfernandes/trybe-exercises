@@ -40,6 +40,14 @@ myWebpage.addEventListener('dblclick', function() {
   window.location.href = "http://www.google.com.br";
 });
 
+myWebpage.addEventListener('mouseenter', function() {
+  myWebpage.style.color = 'green';
+});
+
+myWebpage.addEventListener('mouseleave', function() {
+  myWebpage.style.color = 'white';
+});
+
 input.addEventListener('input', function() {
   divUm.innerText = event.target.value;
 });
