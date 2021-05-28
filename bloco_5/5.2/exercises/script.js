@@ -43,10 +43,13 @@ for (let index = 0; index < document.querySelectorAll('h3').length; index += 1) 
 
 
 // Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do div criado no passo 5;
+// Remova o div criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
 let newImg = document.createElement('img');
 newImg.src = 'https://picsum.photos/200';
 newImg.className = 'small-image'
 document.querySelector('.left-content').appendChild(newImg);
+document.querySelector('.left-content').remove();
+
 
 // Função que cria Li's recebendo como parâmento uma string contento os itens da lista
 function newUlList(itens) {
@@ -63,3 +66,9 @@ let newList = document.createElement('ul');
 document.querySelector('.right-content').appendChild(newList);
 let itens = ['1','2','3','4','5','6','7','8','9','10'];
 document.querySelector('ul').appendChild(newUlList(itens));
+
+// Centralize o div criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto do div ;
+
+// Troque a cor de fundo do elemento pai da div criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+
+// Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
