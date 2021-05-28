@@ -6,7 +6,9 @@ function newTitle(tag, text) {
 }
 
 //Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
+// Adicione a classe title na tag h1 criada;
 document.body.appendChild(newTitle('h1', 'Exercício 5.2 - JavaScript DOM como filho da tag body'));
+document.querySelector('body h1').className = 'title';
 
 // Função para criar novas Div's recebendo como parâmetro uma sting com o nome da classe
 function newDiv(classe) {
