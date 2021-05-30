@@ -72,3 +72,38 @@ btnHoliday.addEventListener('click', function() {
 createButton('Sexta-feira');
 const friday = document.querySelector('.buttons-container').firstElementChild.nextElementSibling;
 friday.id = 'btn-friday';
+
+//Quinta Função
+const fridayDays = document.querySelectorAll('.friday');
+
+function changeFridayText() {
+  for (let index = 0; index < fridayDays.length; index += 1) {
+    fridayDays[index].innerText = 'SEXTOU!';
+  }
+}
+
+function returnFridayDays() {
+  for (let index = 0; index < fridayDays.length; index += 1) {
+    if (index === 0){
+      fridayDays[0].innerText = '4';
+    }
+    if (index === 1) {
+      fridayDays[1].innerText = '11';
+    }
+    if (index === 2) {
+      fridayDays[2].innerText = '18';
+    }
+    if (index === 3) {
+      fridayDays[3].innerText = '25';
+    }
+  }
+}
+
+friday.addEventListener('click', function() {
+  let actualText = fridayDays[0].innerText;
+  if (actualText === 'SEXTOU!') {
+    returnFridayDays();
+  } else {
+    changeFridayText();
+  }
+});
