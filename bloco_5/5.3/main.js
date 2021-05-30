@@ -49,7 +49,7 @@ myWebpage.addEventListener('mouseleave', function() {
   myWebpage.style.color = 'white';
 });
 
-input.addEventListener('input', function() {
+input.addEventListener('input', function(event) {
   divUm.innerText = event.target.value;
 });
 
