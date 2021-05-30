@@ -33,3 +33,11 @@ function createDaysList() {
   }
 }
 createDaysList();
+
+function createButton(text) {
+  let button = document.createElement('div');
+  button.innerText = text;
+  button.id = 'btn.holiday';
+  document.querySelector('.buttons-container').appendChild(button);
+}
+createButton('Feriados');
