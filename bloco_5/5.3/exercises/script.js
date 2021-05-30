@@ -67,3 +67,8 @@ btnHoliday.addEventListener('click', function() {
     colorHolidaysOn();
   }
 });
+
+// Quarta Função
+createButton('Sexta-feira');
+const friday = document.querySelector('.buttons-container').firstElementChild.nextElementSibling;
+friday.id = 'btn-friday';
