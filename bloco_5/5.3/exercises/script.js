@@ -34,10 +34,36 @@ function createDaysList() {
 }
 createDaysList();
 
+// Segunda Função
 function createButton(text) {
-  let button = document.createElement('div');
+  let button = document.createElement('button');
   button.innerText = text;
   button.id = 'btn.holiday';
   document.querySelector('.buttons-container').appendChild(button);
 }
 createButton('Feriados');
+
+// Terceira Função
+const holidays = document.querySelectorAll('.holiday');
+const btnHoliday = document.getElementById('btn.holiday');
+
+function colorHolidaysOn() {
+  for (let index = 0; index < holidays.length; index += 1) {
+    holidays[index].style.backgroundColor = 'yellow';
+  }
+}
+
+function colorHolidaysOff() {
+  for (let index = 0; index < holidays.length; index += 1) {
+    holidays[index].style.backgroundColor = 'rgb(238 238 238)';
+  }
+}
+
+btnHoliday.addEventListener('click', function() {
+  let actualColor =  holidays[0].style.backgroundColor;
+  if (actualColor === 'yellow') {
+    colorHolidaysOff();
+  } else {
+    colorHolidaysOn();
+  }
+});
