@@ -137,3 +137,11 @@ function newTask(text) {
 }
 newTask('Cozinhar');
 
+// Oitava Função
+function newTaskColor(color) {
+  let newColor = document.createElement('div');
+  newColor.style.backgroundColor = color;
+  newColor.className = ('task');
+  document.querySelector(".my-tasks").appendChild(newColor);
+}
+newTaskColor('red');
