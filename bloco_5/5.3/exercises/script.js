@@ -193,3 +193,34 @@ function colorTaskText() {
   });
 }
 colorTaskText();
+
+// Bônus
+function newAppointment(text) {
+  let appointment = document.createElement('p');
+  appointment.innerText = text;
+  document.querySelector('.input-container').appendChild(appointment);
+}
+//  divUm.innerText = event.target.value;
+let textAppointment = document.querySelector('.input-container');
+let btnAdd = document.querySelector('#btn-add');
+text = '';
+
+textAppointment.addEventListener('input', function(event){
+  text = event.target.value;
+});
+
+btnAdd.addEventListener('click', function(){
+  if (text === '') {
+    alert('Campo em Branco!');
+  } else {
+    newAppointment(text);
+  }
+});
+
+textAppointment.addEventListener('keycode', function(event){
+  console.log(event.keycode);
+  console.log(event.which);
+  if (event.keycode == 13){
+    newAppointment(text);
+  }
+});
