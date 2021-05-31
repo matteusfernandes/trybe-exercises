@@ -145,3 +145,17 @@ function newTaskColor(color) {
   document.querySelector(".my-tasks").appendChild(newColor);
 }
 newTaskColor('red');
+
+// Nona Função
+function colorTask() {
+  let tasks = document.querySelector('.task');
+  
+  tasks.addEventListener('click', function(event){
+    if (event.target.className === 'task selected') {
+      event.target.className = ('task');
+    } else {
+      event.target.className = ('task selected');
+    }
+  });
+}
+colorTask();
