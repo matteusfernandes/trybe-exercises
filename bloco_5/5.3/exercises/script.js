@@ -196,12 +196,12 @@ colorTaskText();
 
 // Bônus
 function newAppointment(text) {
-  let appointment = document.createElement('p');
+  let appointment = document.createElement('li');
   appointment.innerText = text;
   document.querySelector('.input-container').appendChild(appointment);
 }
 //  divUm.innerText = event.target.value;
-let textAppointment = document.querySelector('.input-container');
+let textAppointment = document.querySelector('#task-input');
 let btnAdd = document.querySelector('#btn-add');
 text = '';
 
@@ -210,17 +210,15 @@ textAppointment.addEventListener('input', function(event){
 });
 
 btnAdd.addEventListener('click', function(){
-  if (text === '') {
+  if (textAppointment.value.length === 0) {
     alert('Campo em Branco!');
   } else {
     newAppointment(text);
   }
 });
 
-textAppointment.addEventListener('keycode', function(event){
-  console.log(event.keycode);
-  console.log(event.which);
-  if (event.keycode == 13){
+textAppointment.addEventListener('keyup', function(event){
+  if (event.keyCode === 13 && textAppointment.value.length > 0){
     newAppointment(text);
   }
 });
