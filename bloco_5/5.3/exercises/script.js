@@ -129,7 +129,7 @@ function dayZoomOut() {
 }
 dayZoomOut();
 
-//Sétima Função
+// //Sétima Função
 function newTask(text) {
   let task = document.createElement('span');
   task.innerText = text;
@@ -183,3 +183,13 @@ function colorDay (){
   });
 }
 colorDay();
+
+// Colorir Tarefa
+function colorTaskText() {
+  let tasksText = document.querySelector('.my-tasks span');
+
+  tasksText.addEventListener('click', function(event){
+    event.target.style.color = document.querySelector('.task-selected').style.backgroundColor;
+  });
+}
+colorTaskText();
