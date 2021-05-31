@@ -42,4 +42,14 @@ newElement('p', paragraphText, main);
 newTitle = 'Escolha a cor de fundo da página:'
 newElement('h3', newTitle, colors);
 
-// FUNÇÃO PARA MUDAR A COR DE FUNDO DA PÁGINA
+// FUNÇÃO PARA CRIAR CORES DE FUNDO DA PÁGINA
+function newBackgroundColor(color) {
+  let newColor = document.createElement('div');
+  newColor.style.backgroundColor = color;
+  newColor.className = ('background-color');
+  document.querySelector('.colors-display').appendChild(newColor);
+}
+newBackgroundColor('black');
+newBackgroundColor('white');
+newBackgroundColor('green');
+newBackgroundColor('yellow');
