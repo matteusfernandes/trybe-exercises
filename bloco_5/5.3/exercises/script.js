@@ -128,3 +128,12 @@ function dayZoomOut() {
   });
 }
 dayZoomOut();
+
+//Sétima Função
+function newTask(text) {
+  let task = document.createElement('span');
+  task.innerText = text;
+  document.querySelector(".my-tasks").appendChild(task);
+}
+newTask('Cozinhar');
+
