@@ -145,17 +145,41 @@ function newTaskColor(color) {
   document.querySelector(".my-tasks").appendChild(newColor);
 }
 newTaskColor('red');
+newTaskColor('blue');
+newTaskColor('yellow');
+
 
 // Nona Função
 function colorTask() {
-  let tasks = document.querySelector('.task');
+  let tasks = document.querySelector('.my-tasks');
   
   tasks.addEventListener('click', function(event){
-    if (event.target.className === 'task selected') {
+    // Existe algum elemento na classe 'task-selected'?
+    let taskSelectedLength = document.getElementsByClassName('task-selected').length;
+    if (taskSelectedLength > 0) {
+      for (let index = 0; index < taskSelectedLength; index += 1) {
+        document.getElementsByClassName('task-selected')[index].className = 'task'
+      }
+    }
+    if (event.target.className === 'task-selected' && event.target.style.backgroundColor != '') {
       event.target.className = ('task');
-    } else {
-      event.target.className = ('task selected');
+    } else if (event.target.className === 'task' && event.target.style.backgroundColor != '') {
+      event.target.className = ('task-selected');
     }
   });
 }
 colorTask();
+
+// Décima Função
+function colorDay (){
+  let dayForColor = document.querySelector('#days');
+  
+  dayForColor.addEventListener('click', function(event){
+    if (event.target.style.color === document.querySelector('.task-selected').style.backgroundColor) {
+      event.target.style.color = 'rgb(119 119 119)';
+    } else {
+      event.target.style.color = document.querySelector('.task-selected').style.backgroundColor;
+    }
+  });
+}
+colorDay();
