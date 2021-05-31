@@ -107,3 +107,24 @@ friday.addEventListener('click', function() {
     changeFridayText();
   }
 });
+
+// Sexta Função
+function dayZoomOver() {
+  let dias = document.querySelector('#days');
+  
+  dias.addEventListener('mouseover', function(event){
+    event.target.style.fontSize = '30px';
+    event.target.style.fontWeight = '600';
+  });
+}
+dayZoomOver();
+
+function dayZoomOut() {
+  let dias = document.querySelector('#days');
+  
+  dias.addEventListener('mouseout', function(event){
+    event.target.style.fontSize = '20px';
+    event.target.style.fontWeight = '200';
+  });
+}
+dayZoomOut();
