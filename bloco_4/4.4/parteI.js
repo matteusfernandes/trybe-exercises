@@ -20,3 +20,19 @@ for (let key in info) {
 for (let key in info) {
   console.log(info[key]);
 }
+
+// 5
+let info2 = {
+  personagem: 'Tio Patinhas',
+  origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
+  nota: 'O último MacPatinhas',
+  recorrente: 'Sim'
+};
+
+for (let key in info) {
+  if (key === 'recorrente') {
+    console.log('Ambos recorrentes // Atenção para essa última linha!');
+  } else {
+    console.log(info[key] + " e " + info2[key]);
+  }
+}
