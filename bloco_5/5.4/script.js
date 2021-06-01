@@ -2,6 +2,7 @@
 const head = document.querySelector('.head-container');
 const main = document.querySelector('.main-container');
 const colors = document.querySelector('.colors-display');
+const body = document.querySelector('body');
 
 // Função para implementar novos elementos
 function newElement(type, text, dad) {
@@ -53,3 +54,12 @@ newBackgroundColor('black');
 newBackgroundColor('white');
 newBackgroundColor('green');
 newBackgroundColor('yellow');
+
+// FUNÇÃO PARA MUDAR A COR DE FUNDO DA PÁGINA
+function changeBackgroundColor() {
+  body.addEventListener('click', function(event){
+    body.style.backgroundColor = 'black';
+    body.style.color = 'white';
+  });
+}
+changeBackgroundColor();
