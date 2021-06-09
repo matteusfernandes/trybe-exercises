@@ -38,3 +38,9 @@ function generateAllStatesNames() {
   }
 }
 generateAllStatesNames();
+
+// Função que interrompe o fluxo automático do form
+const btnSend = document.querySelector('#send-button');
+btnSend.addEventListener('click', function (event) {
+  event.preventDefault();
+});
