@@ -58,8 +58,9 @@ newBackgroundColor('yellow');
 // FUNÇÃO PARA MUDAR A COR DE FUNDO DA PÁGINA
 function changeBackgroundColor() {
   body.addEventListener('click', function(event){
-    body.style.backgroundColor = 'black';
-    body.style.color = 'white';
+    // Se a cor for preta, a letra tem que ficar branca
+    // A cor tem que ser a que está selecionada (criar classe "color-selected")
+    body.style.backgroundColor = 'green';
   });
 }
 changeBackgroundColor();
