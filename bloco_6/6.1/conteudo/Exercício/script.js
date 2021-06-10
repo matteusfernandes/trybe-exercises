@@ -139,6 +139,17 @@ function checkAdress() {
   }
 }
 
+// Função para checar se a cidade é válida
+function checkCity() {
+  const city = document.getElementById('city-input').value;
+
+  if (city.length > 0 && city.length <=28) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 // Função que interrompe o fluxo automático do form
 const btnSend = document.querySelector('#send-button');
 btnSend.addEventListener('click', function (event) {
