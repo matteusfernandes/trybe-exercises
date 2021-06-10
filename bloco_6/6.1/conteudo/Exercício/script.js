@@ -39,6 +39,58 @@ function generateAllStatesNames() {
 }
 generateAllStatesNames();
 
+// Função que Verifica se o dia é válido
+function validDay(dayToValid) {
+  if (dayToValid > 0 && dayToValid <= 31) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// Função que Verifica se o mês é válido
+function validMonth(monthToValid) {
+  if (monthToValid > 0 && monthToValid <= 12) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// Função para separar dia, mês e ano e chamar verificações
+function setTheDate(dateNumber) {
+  const dateString = String(dateNumber);
+  const day = dateString[0] + dateString[1];
+  
+  // Verifica se o Dia é válido
+  const verifyDay = validDay(day);
+  const month = dateString[2] + dateString[3];
+  const verifyMonth = validMonth(month);
+  let year = '';
+  for (let index = 4; index < dateString.length; index += 1) {
+    year += dateString[index];
+  }
+  if (verifyDay === false) {
+    alert('Dia inválido!');
+  }
+  if (verifyMonth === false){
+  // Verifica se o mês é válido
+    alert('Mês inválido!');
+  }
+  if (parseInt(year) < 0) {
+    alert('Ano inválido');
+  }
+}
+
+// Função que valida a data
+const date = document.querySelector('#start-date');
+date.addEventListener('input', function (event) {
+  const inputDate = event.target.value;
+  if (inputDate.length === 8) {
+    setTheDate(inputDate);
+  }
+});
+
 // Função que interrompe o fluxo automático do form
 const btnSend = document.querySelector('#send-button');
 btnSend.addEventListener('click', function (event) {
