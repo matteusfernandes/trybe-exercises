@@ -162,7 +162,12 @@ function checkSummary() {
 
 // Função para checar se o cargo é válido
 function checkJob() {
+  const job = document.getElementById('office').value;
 
+  if (job.length > 0 && job.length <= 40) {
+    return true;
+  }
+  return false;
 }
 
 // Função para checar se a descrição do cargo é válida
