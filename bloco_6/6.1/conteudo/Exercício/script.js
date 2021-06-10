@@ -150,6 +150,26 @@ function checkCity() {
   }
 }
 
+// Função para checar se o Resumo do Cargo é válido
+function checkSummary() {
+  const summary = document.getElementById('resume').value;
+
+  if (summary.length > 0 && summary.length <= 1000) {
+    return true;
+  }
+  return false;
+}
+
+// Função para checar se o cargo é válido
+function checkJob() {
+
+}
+
+// Função para checar se a descrição do cargo é válida
+function checkJobDescription() {
+
+}
+
 // Função que interrompe o fluxo automático do form
 const btnSend = document.querySelector('#send-button');
 btnSend.addEventListener('click', function (event) {
@@ -165,4 +185,7 @@ function validadeData() {
   checkCpf();
   checkAdress();
   checkCity();
+  checkSummary();
+  checkJob();
+  checkJobDescription();
 }
