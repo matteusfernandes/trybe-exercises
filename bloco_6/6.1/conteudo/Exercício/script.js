@@ -95,9 +95,9 @@ function setTheDate() {
 
 // Função para checar se o nome foi digitado
 function checkName() {
-  const fullName = document.getElementById('full-name');
+  const fullName = document.getElementById('full-name').value;
 
-  if (fullName.value.length > 0 && fullName.value.length <= 40) {
+  if (fullName.length > 0 && fullName.length <= 40) {
     return true;
   } else {
     return false;
@@ -106,12 +106,11 @@ function checkName() {
 
 // Função para checar se o email é válido
 function checkEmail() {
-  const email = document.getElementById('email');
-  const emailText = email.value;
+  const email = document.getElementById('email').value;
   let validEmail = false;
-  if (emailText.length > 0 && emailText.length <= 50) {
-    for (let key in emailText) {
-      if (emailText[key] === '@') {
+  if (email.length > 0 && email.length <= 50) {
+    for (let key in email) {
+      if (email[key] === '@') {
         validEmail = true;
       }
     }
@@ -122,8 +121,18 @@ function checkEmail() {
 
 // Função para checar se o cpf é válido
 function checkCpf() {
-  const validCpf = document.getElementById('cpf-number');
-  if (validCpf.value.length > 0 && validCpf.value.length <= 11) {
+  const validCpf = document.getElementById('cpf-number').value;
+  if (validCpf.length > 0 && validCpf.length <= 11) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// Função para checar se o endereço é válido
+function checkAdress() {
+  const adress = document.getElementById('full-adress').value;
+  if (adress.length > 0 && adress.length <= 200) {
     return true;
   } else {
     return false;
@@ -143,4 +152,6 @@ function validadeData() {
   checkName();
   checkEmail();
   checkCpf();
+  checkAdress();
+  checkCity();
 }
