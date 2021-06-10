@@ -58,41 +58,78 @@ function validMonth(monthToValid) {
 }
 
 // Função para separar dia, mês e ano e chamar verificações
-function setTheDate(dateNumber) {
-  const dateString = String(dateNumber);
-  const day = dateString[0] + dateString[1];
+function setTheDate() {
+  const date = document.querySelector('#start-date');
+  let dateIsValid = true;
   
-  // Verifica se o Dia é válido
-  const verifyDay = validDay(day);
-  const month = dateString[2] + dateString[3];
-  const verifyMonth = validMonth(month);
-  let year = '';
-  for (let index = 4; index < dateString.length; index += 1) {
-    year += dateString[index];
-  }
-  if (verifyDay === false) {
-    alert('Dia inválido!');
-  }
-  if (verifyMonth === false){
-  // Verifica se o mês é válido
-    alert('Mês inválido!');
-  }
-  if (parseInt(year) < 0) {
-    alert('Ano inválido');
+  if (date.value.length === 8) {
+    const dateString = String(date.value);
+    const day = dateString[0] + dateString[1];
+    
+    // Verifica se o Dia é válido
+    const verifyDay = validDay(day);
+    const month = dateString[2] + dateString[3];
+    const verifyMonth = validMonth(month);
+    let year = '';
+    for (let index = 4; index < dateString.length; index += 1) {
+      year += dateString[index];
+    }
+    if (verifyDay === false) {
+      alert('Dia inválido!');
+      dateIsValid = false;
+      return dateIsValid;
+    }
+    if (verifyMonth === false){
+    // Verifica se o mês é válido
+      alert('Mês inválido!');
+      dateIsValid = false;
+      return dateIsValid;
+    }
+    if (parseInt(year) < 0) {
+      alert('Ano inválido');
+      dateIsValid = false;
+      return dateIsValid;
+    }
   }
 }
 
-// Função que valida a data
-const date = document.querySelector('#start-date');
-date.addEventListener('input', function (event) {
-  const inputDate = event.target.value;
-  if (inputDate.length === 8) {
-    setTheDate(inputDate);
+// Função para checar se o nome foi digitado
+function checkName() {
+  const fullName = document.getElementById('full-name');
+
+  if (fullName.value.length > 0) {
+    return true;
+  } else {
+    return false;
   }
-});
+}
+
+// Função para checar se o email é válido
+function checkEmail() {
+  const email = document.getElementById('email');
+  const emailText = email.value;
+  let validEmail = false;
+  if (emailText.length > 0) {
+    for (let key in emailText) {
+      if (emailText[key] === '@') {
+        validEmail = true;
+      }
+    }
+    return validEmail;
+  }
+  return validEmail;
+}
 
 // Função que interrompe o fluxo automático do form
 const btnSend = document.querySelector('#send-button');
 btnSend.addEventListener('click', function (event) {
   event.preventDefault();
+  validadeData();
 });
+
+// Função que inicia o processo de validação
+function validadeData() {
+  setTheDate();
+  checkName();
+  checkEmail();
+}
