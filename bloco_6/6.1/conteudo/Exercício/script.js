@@ -172,7 +172,12 @@ function checkJob() {
 
 // Função para checar se a descrição do cargo é válida
 function checkJobDescription() {
+  const jobDescription = document.getElementById('description').value;
 
+  if (jobDescription.length > 0 && jobDescription.length <= 500) {
+    return true;
+  }
+  return false;
 }
 
 // Função que interrompe o fluxo automático do form
