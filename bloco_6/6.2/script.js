@@ -42,4 +42,39 @@ generateAllStatesNames();
 // Biblioteca para Data
 let day = new Pikaday({ field: document.getElementById('datepicker') });
 
-// 
+//Biblioteca de Validação
+new window.JustValidate('.form', {
+  // options here
+});
+
+new window.JustValidate('.form', {
+  Rules: {
+    email: {
+        required: true,
+        email: true
+    },
+    name: {
+        required: true,
+        minLength: 3,
+        maxLength: 20
+    },
+    text: {
+        required: true,
+        maxLength: 1000,
+        minLength: 5
+    }
+  }
+});
+
+new window.JustValidate('.form', {
+  Messages: {
+    required: 'The field is required',
+    email: 'Please, type a valid email',
+    maxLength: 'The field must contain a maximum of :value characters',
+    minLength: 'The field must contain a minimum of :value characters',
+  },
+});
+
+new window.JustValidate('.form', {
+  colorWrong: "#B81111"
+});

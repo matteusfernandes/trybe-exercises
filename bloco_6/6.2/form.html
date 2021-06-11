@@ -7,6 +7,7 @@
   <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
   <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
   <title>New Form</title>
 <body>
   <header class="hero is-medium is-link">
@@ -17,19 +18,21 @@
   </header>
     
   <main class="level" id="main-content">
-    <form class="container" action="" method="GET">
+    <form class="container form" action="" method="GET">
       
+      <!-- NOME -->
       <div class="field">
         <label class="label" for="full-name">Nome</label>
         <div class="control">
-          <input class="input" type="text" name="fullname" id="full-name" maxlength="40" required>
+          <input class="input" type="text" name="fullname" id="full-name" data-validate-field="name">
         </div>
       </div>
 
+      <!-- EMAIL -->
       <div class="field">
         <label class="label">Email</label>
         <div class="control has-icons-left has-icons-right">
-          <input class="input is-danger" type="email" name="email" id="email" placeholder="Email input" maxlength="50" value="hello@">
+          <input class="input is-danger" type="email" name="email" id="email" placeholder="Email input" data-validate-field="email">
           <span class="icon is-small is-left">
             <i class="fas fa-envelope"></i>
           </span>
@@ -39,28 +42,32 @@
         </div>
         <p class="help is-danger">This email is invalid</p>
       </div>
-      
+
+      <!-- CPF -->
       <div class="field">
         <label class="label" for="cpf-number">CPF</label>
         <div class="control">
-          <input class="input" type="text" name="cpf" id="cpf-number" maxlength="11" placeholder="000000000" required>
+          <input class="input" type="text" name="cpf" id="cpf-number" placeholder="000000000" data-validate-field="text">
         </div>
       </div>
 
+      <!-- ENDEREÇO -->
       <div class="field">
         <label class="label" for="full-adress">Endereço</label>
         <div class="control">
-          <input class="input" type="text" name="full-adress" id="full-adress" maxlength="200" required>
+          <input class="input" type="text" name="full-adress" id="full-adress" data-validate-field="text">
         </div>
       </div>
 
+      <!-- CIDADE -->
       <div class="field">
         <label class="label" for="city">Cidade</label>
         <div class="control">
-          <input class="input" type="text" name="city" id="city" maxlength="28" required>
+          <input class="input" type="text" name="city" id="city" data-validate-field="text">
         </div>
       </div>
 
+      <!-- ESTADO -->
       <div class="field">
         <label class="label" for="states">Estado</label>
         <div class="control">
@@ -70,6 +77,7 @@
         </div>
       </div>
 
+      <!-- TIPO DE RESIDENCIA -->
       <div class="field">
         <div class="control">
           <label class="radio">
@@ -82,28 +90,32 @@
           </label>
         </div>
       </div>
-            
+        
+      <!-- RESUMO DO CURRICULO -->
       <div class="field">
         <label class="label" for="resume">Resumo do Currículo</label>
         <div class="control">
-          <textarea class="textarea" name="resume-summary" id="resume" maxlength="1000" required></textarea>
+          <textarea class="textarea" name="resume-summary" id="resume" data-validate-field="text"></textarea>
         </div>
       </div>
       
+      <!-- CARGO -->
       <div class="field">
         <label class="label" for="office">Cargo</label>
         <div class="control">
-          <input class="input" type="text" name="position-held" id="office" maxlength="40" required>
+          <input class="input" type="text" name="position-held" id="office" data-validate-field="text">
         </div>
       </div>
 
+      <!-- DESCRIÇÃO DO CARGO -->
       <div class="field">
         <label class="label" for="description">Descrição do Cargo</label>
         <div class="control">
-          <input class="input" type="text" name="job-description" id="description" maxlength="500" required>
+          <input class="input" type="text" name="job-description" id="description" data-validate-field="text">
         </div>
       </div>
 
+      <!-- DATA -->
       <div class="field">
         <label class="label" for="start-date">Data de Início</label>
         <div class="control">
@@ -111,6 +123,7 @@
         </div>
       </div>
       
+      <!-- BOTÕES -->
       <div class="field is-grouped is-grouped-centered">
         <button class="button is-link" id="send-button">Enviar</button>
         <button class="button is-light" id="clear-button" type="reset">Limpar Formulário</button>
