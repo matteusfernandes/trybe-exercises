@@ -292,6 +292,23 @@ function innerElements() {
   initialDate.innerText = ("Data de Início: " + assembleDate());
   initialDate.className = 'line-content';
   finalDiv.appendChild(initialDate);
+
+  // Cria Botão de Submmit
+  const btnSubmmit = document.createElement("button");
+  btnSubmmit.innerText = 'Enviar';
+  btnSubmmit.type = 'submmit';
+  finalDiv.appendChild(btnSubmmit);
+  
+
+  // Cria Botão de Limpar
+  const btnClear = document.createElement("button");
+  btnClear.innerText = 'Limpar Formulário';
+  finalDiv.appendChild(btnClear);
+
+  btnClear.addEventListener('click', function() {
+    const mainContent = document.getElementById('main-content');
+    mainContent.firstElementChild.remove();
+  });
 }
 
 // Função para montar a Div com o resultado do form
