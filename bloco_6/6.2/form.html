@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">]
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
   <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
   <title>New Form</title>
 <body>
   <header class="hero is-medium is-link">
@@ -103,9 +105,9 @@
       </div>
 
       <div class="field">
-        <label for="start-date">Data de Início</label>
+        <label class="label" for="start-date">Data de Início</label>
         <div class="control">
-          <input class="input" type="date" name="start-date" id="start-date" required>
+          <input class="input" type="text" name="start-date" id="datepicker" required>
         </div>
       </div>
       
@@ -116,5 +118,6 @@
     </form>
   </main>
 
+  <script src="script.js"></script>
 </body>
 </html>
