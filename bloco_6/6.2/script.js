@@ -41,3 +41,5 @@ generateAllStatesNames();
 
 // Biblioteca para Data
 let day = new Pikaday({ field: document.getElementById('datepicker') });
+
+// 
