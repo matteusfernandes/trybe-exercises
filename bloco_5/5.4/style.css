@@ -1,0 +1,66 @@
+* {
+  margin: 10px;
+  padding: 0;
+}
+
+.head-container {
+  font-size: 40px;
+  text-align: center;
+  line-height: 90px;
+  margin-top: 10px;
+}
+
+.colors-display {
+  display: inline-block;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 10px;
+  display: block;
+}
+
+h3 {
+  font-size: 18px;
+  font-style: bold;
+  font-weight: 400;
+  margin: 10px 10px 0px 10px;
+  line-height: 20px;
+}
+
+h4 {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  margin: 10px 10px 30px 10px;
+  line-height: 20px;
+}
+
+main {
+  display: block;
+}
+
+p {
+  text-align: justify;
+  margin: 0 0 15px 0;
+  display: block;
+}
+
+.background-color {
+  border: 1px solid;
+  border-radius: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: inline-block;
+  height: 35px;
+  margin-left: 10px;
+  vertical-align: middle;
+  width: 35px;
+}
+
+.colors-display div:hover {
+  height: 45px;
+  width: 45px;
+}
