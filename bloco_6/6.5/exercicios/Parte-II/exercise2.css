@@ -27,3 +27,51 @@ header li {
   list-style: none;
   padding: 0 10px;
 }
+
+.main-container {
+  display: flex;
+}
+
+.aside-one {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+}
+
+.aside-one ul {
+  list-style: none;
+  text-align: left;
+}
+
+.aside-one ul li {
+  margin-bottom: 5px;
+}
+
+.aside-one h2 {
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  text-align: justify;
+}
+
+.aside-two {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+}
+
+.aside-two ul {
+  list-style: none;
+}
+
+.aside-two ul li {
+  margin-bottom: 5px;
+}
+
+.aside-two h2 {
+  text-align: center;
+}
