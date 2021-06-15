@@ -1,6 +1,29 @@
 html {
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+header {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  width: 100%;
+}
+
+header p {
+  font-size: 40px;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  list-style: none;
+  padding: 0 10px;
 }
