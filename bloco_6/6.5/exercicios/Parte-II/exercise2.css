@@ -16,7 +16,7 @@ header {
 }
 
 header p {
-  font-size: 40px;
+  font-size: 2.5em;
 }
 
 header ul {
@@ -41,14 +41,17 @@ header li {
 .aside-one ul {
   list-style: none;
   text-align: left;
+  margin-right: 10px;
 }
 
 .aside-one ul li {
   margin-bottom: 5px;
+  font-size: 15px;
 }
 
 .aside-one h2 {
   text-align: center;
+  font-size: 1em;
 }
 
 .main-content {
@@ -56,6 +59,11 @@ header li {
   flex-direction: column;
   flex-basis: 50%;
   text-align: justify;
+}
+
+.main-content h1 {
+  text-align: center;
+  font-size: 1.5em;
 }
 
 .aside-two {
@@ -66,14 +74,17 @@ header li {
 
 .aside-two ul {
   list-style: none;
+  margin-right: 0px;
 }
 
 .aside-two ul li {
   margin-bottom: 5px;
+  font-size: 15px;
 }
 
 .aside-two h2 {
   text-align: center;
+  font-size: 1em;
 }
 
 footer {
@@ -83,6 +94,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 10px;
 }
 
 footer h3 {
@@ -92,4 +104,18 @@ footer h3 {
 footer p {
   font-size: 10px;
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    justify-content: center;
+  }
+
+  header p {
+    font-size: 1.5em;
+  }
+
+  header nav {
+    display: none;
+  }
 }
