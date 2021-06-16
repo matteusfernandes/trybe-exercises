@@ -118,4 +118,20 @@ footer p {
   header nav {
     display: none;
   }
+
+  .aside-one ul {
+    padding: 0 0 0 10px;
+  }
+
+  .aside-one ul li {
+    font-size: 10px;
+  }
+
+  .aside-two ul {
+    padding: 0 0 0 10px;
+  }
+
+  .aside-two ul li {
+    font-size: 10px;
+  }
 }
