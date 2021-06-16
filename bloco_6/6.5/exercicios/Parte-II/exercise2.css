@@ -15,10 +15,6 @@ header {
   width: 100%;
 }
 
-header p {
-  font-size: 2.5em;
-}
-
 header ul {
   display: flex;
 }
@@ -46,12 +42,10 @@ header li {
 
 .aside-one ul li {
   margin-bottom: 5px;
-  font-size: 15px;
 }
 
 .aside-one h2 {
   text-align: center;
-  font-size: 1em;
 }
 
 .main-content {
@@ -63,7 +57,6 @@ header li {
 
 .main-content h1 {
   text-align: center;
-  font-size: 1.5em;
 }
 
 .aside-two {
@@ -79,12 +72,10 @@ header li {
 
 .aside-two ul li {
   margin-bottom: 5px;
-  font-size: 15px;
 }
 
 .aside-two h2 {
   text-align: center;
-  font-size: 1em;
 }
 
 footer {
@@ -192,5 +183,32 @@ footer p {
 
   .main-content p {
     font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+
+  header p {
+    font-size: 2.5em;
+  }
+
+  .aside-one h2 {
+    font-size: 1em;
+  }
+
+  .aside-one ul li {
+    font-size: 15px;
+  }
+
+  .aside-two h2 {
+    font-size: 1em;
+  }
+
+  .aside-two ul li {
+    font-size: 15px;
+  }
+
+  .main-content h1 {
+    font-size: 1.5em;;
   }
 }
