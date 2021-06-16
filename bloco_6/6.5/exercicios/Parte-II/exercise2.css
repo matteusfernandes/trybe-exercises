@@ -102,6 +102,7 @@ footer h3 {
 }
 
 footer p {
+  text-align: center;
   font-size: 10px;
   margin-bottom: 5px;
 }
@@ -119,6 +120,10 @@ footer p {
     display: none;
   }
 
+  .aside-one h2 {
+    font-size: 0.8em;
+  }
+
   .aside-one ul {
     padding: 0 0 0 10px;
   }
@@ -127,11 +132,23 @@ footer p {
     font-size: 10px;
   }
 
+  .aside-two h2 {
+    font-size: 0.8em;
+  }
+
   .aside-two ul {
     padding: 0 0 0 10px;
   }
 
   .aside-two ul li {
     font-size: 10px;
+  }
+
+  .main-content h1 {
+    font-size: 1em;
+  }
+
+  .main-content p {
+    font-size: 15px;
   }
 }
