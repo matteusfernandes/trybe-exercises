@@ -1,0 +1,1 @@
+let clickCount = 0;
