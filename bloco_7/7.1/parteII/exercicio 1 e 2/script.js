@@ -18,3 +18,16 @@ const factorial = (number) => ( number > 1 ) ? number * factorial(number - 1) : 
 
 // EXERCICIO 2
 
+const bigestWorld = (phrase) => {
+  let arrayStr = phrase.split(" ");
+  let maior = 0;
+  let palavra = null;
+  for (let key of arrayStr) {
+    if (maior < key.length) {
+        maior = key.length;
+        palavra = key;
+    }
+  }
+  return palavra;
+}
+console.log(bigestWorld('Antônio foi no banheiro e não sabemos o que aconteceu'));
