@@ -17,3 +17,10 @@ const lesson3 = {
   professor: 'Maria Clara',
   turno: 'noite',
 };
+
+function newTurn(object, key, value) {
+  object[key] = value;
+}
+
+newTurn(lesson2, 'turno', 'manhã');
+console.log(Object.keys(lesson2));
