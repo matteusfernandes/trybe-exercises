@@ -39,9 +39,16 @@ function objectValues(object) {
   }
 }
 
-const allLessons = {
-  lesson1: Object.assign({}, lesson1),
-  lesson2: Object.assign({}, lesson2),
-  lesson3: Object.assign({}, lesson3)
-};
+const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
+
 console.log(allLessons);
+
+function numberOfStudents(object) {
+  let total = 0;
+  const actualKey = Object.keys(object);
+  for (index in actualKey) {
+    total += object[actualKey[index]].numeroEstudantes;
+  }
+  return total;
+};
+
