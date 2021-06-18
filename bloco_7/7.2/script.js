@@ -23,7 +23,6 @@ function newTurn(object, key, value) {
 }
 
 newTurn(lesson2, 'turno', 'manhã');
-console.log(Object.keys(lesson2));
 
 function allKeys(object) {
   console.log(Object.keys(object));
@@ -39,3 +38,10 @@ function objectValues(object) {
     console.log(Object.values(object));
   }
 }
+
+const allLessons = {
+  lesson1: Object.assign({}, lesson1),
+  lesson2: Object.assign({}, lesson2),
+  lesson3: Object.assign({}, lesson3)
+};
+console.log(allLessons);
