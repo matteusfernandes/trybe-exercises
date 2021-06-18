@@ -28,3 +28,8 @@ console.log(Object.keys(lesson2));
 function allKeys(object) {
   console.log(Object.keys(object));
 }
+
+function objectLength(object) {
+  const objectToLength = Object.keys(object);
+  console.log(objectToLength.length);
+}
