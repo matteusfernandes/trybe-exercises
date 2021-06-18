@@ -60,3 +60,14 @@ function positionInObject(object, index) {
   const key = Object.entries(object);
   console.log (key[index][1]);
 }
+
+function verifyPair(object, key, value) {
+  const verify = Object.entries(object);
+  let verificate = false;
+  for (index in verify) {
+    if (verify[index][0] === key && verify[index][1] === value) {
+      return true;
+    }
+  }
+  return verificate;
+}
