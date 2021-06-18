@@ -39,4 +39,3 @@ function objectValues(object) {
     console.log(Object.values(object));
   }
 }
-
