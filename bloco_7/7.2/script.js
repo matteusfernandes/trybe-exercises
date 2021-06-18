@@ -24,3 +24,7 @@ function newTurn(object, key, value) {
 
 newTurn(lesson2, 'turno', 'manhã');
 console.log(Object.keys(lesson2));
+
+function allKeys(object) {
+  console.log(Object.keys(object));
+}
