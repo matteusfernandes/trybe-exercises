@@ -55,3 +55,8 @@ function numberOfStudents(object) {
   return total;
 };
 
+// Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto
+function positionInObject(object, index) {
+  const key = Object.entries(object);
+  console.log (key[index][1]);
+}
