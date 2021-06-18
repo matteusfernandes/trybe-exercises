@@ -33,3 +33,10 @@ function objectLength(object) {
   const objectToLength = Object.keys(object);
   console.log(objectToLength.length);
 }
+
+function objectValues(object) {
+  for (index in object) {
+    console.log(Object.values(object));
+  }
+}
+
