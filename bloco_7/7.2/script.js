@@ -72,3 +72,18 @@ function verifyPair(object, key, value) {
   }
   return verificate;
 }
+
+//************************** BONUS **************************
+
+// 1. Crie uma função para contar quantos estudantes assistiram às aulas de Matemática. Use o objeto criado no exercício 5.
+function numberOfMathStudents(object) {
+  let total = 0;
+  const actualKey = Object.keys(object);
+  for (index in actualKey) {
+    if (object[actualKey[index]].materia === 'Matemática') {
+      total += object[actualKey[index]].numeroEstudantes;
+    }
+  }
+  return total;
+};
+
