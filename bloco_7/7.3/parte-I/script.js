@@ -2,11 +2,11 @@ const assert = require('assert');
 
 // FUNÇÃO sum
 function sum(a, b) {
-  if (typeof a !== 'number' || typeof b !== 'number') {
-    throw new Error('parameters must be numbers');
-  }
+	if (typeof a !== 'number' || typeof b !== 'number') {
+		throw new Error('parameters must be numbers');
+	}
 
-  return a + b;
+	return a + b;
 }
 
 // TESTES UNITÁRIOS
@@ -22,18 +22,17 @@ function sum(a, b) {
 // 4. Teste se a mensagem de erro é "parameters must be numbers" quando realizar a chamada sum(4, "5")
 // assert.ifError('parameters must be numbers');
 
-
 // ****************************************************************************************************************************
 
 // FUNÇÃO myRemove
 function myRemove(arr, item) {
-  let newArr = [];
-  for (let index = 0; index < arr.length; index += 1) {
-    if (item !== arr[index]) {
-      newArr.push(arr[index]);
-    }
-  }
-  return newArr;
+	let newArr = [];
+	for (let index = 0; index < arr.length; index += 1) {
+		if (item !== arr[index]) {
+			newArr.push(arr[index]);
+		}
+	}
+	return newArr;
 }
 
 // TESTES UNITÁRIOS
@@ -45,3 +44,6 @@ assert.notDeepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 3, 4]);
 
 // 3. Verifique se o array passado por parâmetro não sofreu alterações
 assert.deepStrictEqual(myRemove([1, 2, 3, 4, 5], 5), [1, 2, 3, 4, 5]);
+
+// 4. Verifique se a chamada myRemove([1, 2, 3, 4], 5) retorna o array esperado
+assert.deepStrictEqual(myRemove([1, 2, 3, 4], 5), [[1, 2, 3, 4]]);
