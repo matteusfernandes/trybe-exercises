@@ -11,16 +11,16 @@ function sum(a, b) {
 
 // TESTES UNITÁRIOS
 // 1. Teste se o retorno de sum(4, 5) é 9
-// assert.strictEqual(sum(4,5), 9);
+assert.strictEqual(sum(4,5), 9);
 
 // 2. Teste se o retorno de sum(0, 0) é 0
-// assert.strictEqual(sum(0, 0), 0);
+assert.strictEqual(sum(0, 0), 0);
 
 // 3. Teste se a função sum lança um erro quando os parâmetros são 4 e "5" (string 5)
-// assert.throws(sum(4, '5'));
+assert.throws(sum(4, '5'));
 
 // 4. Teste se a mensagem de erro é "parameters must be numbers" quando realizar a chamada sum(4, "5")
-// assert.ifError('parameters must be numbers');
+assert.ifError('parameters must be numbers');
 
 // ****************************************************************************************************************************
 
@@ -37,16 +37,16 @@ function myRemove(arr, item) {
 
 // TESTES UNITÁRIOS
 // 1. Verifique se a chamada myRemove([1, 2, 3, 4], 3) retorna o array esperado
-// assert.deepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 4]);
+assert.deepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 4]);
 
 // 2. Verifique se a chamada myRemove([1, 2, 3, 4], 3) não retorna o array [1, 2, 3, 4]
-// assert.notDeepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 3, 4]);
+assert.notDeepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 3, 4]);
 
 // 3. Verifique se o array passado por parâmetro não sofreu alterações
-// assert.deepStrictEqual(myRemove([1, 2, 3, 4, 5], 5), [1, 2, 3, 4, 5]);
+assert.deepStrictEqual(myRemove([1, 2, 3, 4, 5], 5), [1, 2, 3, 4, 5]);
 
 // 4. Verifique se a chamada myRemove([1, 2, 3, 4], 5) retorna o array esperado
-// assert.deepStrictEqual(myRemove([1, 2, 3, 4], 5), [[1, 2, 3, 4]]);
+assert.deepStrictEqual(myRemove([1, 2, 3, 4], 5), [[1, 2, 3, 4]]);
 
 // ****************************************************************************************************************************
 
@@ -65,17 +65,17 @@ function myRemoveWithoutCopy(arr, item) {
 
 // TESTES UNITÁRIOS
 // 1. Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 3) retorna o array esperado
-// const testList = [1, 2, 3, 4];
-// assert.deepStrictEqual(myRemoveWithoutCopy(testList, 3), [1, 2, 4]);
+const testList = [1, 2, 3, 4];
+assert.deepStrictEqual(myRemoveWithoutCopy(testList, 3), [1, 2, 4]);
 
 // 2. Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 3) não retorna o array [1, 2, 3, 4]
-// assert.notDeepStrictEqual(myRemoveWithoutCopy(testList, 3), [1, 2, 3, 4]);
+assert.notDeepStrictEqual(myRemoveWithoutCopy(testList, 3), [1, 2, 3, 4]);
 
 // 3. Faça uma chamada para a função myRemoveWithoutCopy e verifique se o array passado por parâmetro sofreu alterações
-// assert.deepStrictEqual(myRemoveWithoutCopy(testList, 1), [2, 3, 4]);
+assert.deepStrictEqual(myRemoveWithoutCopy(testList, 1), [2, 3, 4]);
 
 // 4. Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 5) retorna o array esperado
-// assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4]);
+assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4]);
 
 // ****************************************************************************************************************************
 
