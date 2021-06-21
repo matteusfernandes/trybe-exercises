@@ -1,6 +1,10 @@
 const assert = require('assert');
 // escreva a função addOne aqui
 
+function addOne() {
+  
+}
+
 const myArray = [31, 57, 12, 5];
 const unchanged = [31, 57, 12, 5];
 const expected = [32, 58, 13, 6];
