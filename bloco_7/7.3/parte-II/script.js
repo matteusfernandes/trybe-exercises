@@ -9,14 +9,14 @@ function addOne(array) {
   return newArray;
 }
 
-// const myArray = [31, 57, 12, 5];
-// const unchanged = [31, 57, 12, 5];
-// const expected = [32, 58, 13, 6];
-// const output = addOne(myArray);
+const myArray = [31, 57, 12, 5];
+const unchanged = [31, 57, 12, 5];
+const expected = [32, 58, 13, 6];
+const output = addOne(myArray);
 
-// assert.strictEqual(typeof addOne, 'function');
-// assert.deepStrictEqual(output, expected);
-// assert.deepStrictEqual(myArray, unchanged);
+assert.strictEqual(typeof addOne, 'function');
+assert.deepStrictEqual(output, expected);
+assert.deepStrictEqual(myArray, unchanged);
 
 // **************************************************************************************
 
@@ -29,12 +29,12 @@ function wordLengths(array) {
   return newArray;
 }
 
-// const words = ['sun', 'potato', 'roundabout', 'pizza'];
-// const expected = [3, 6, 10, 5];
+const words = ['sun', 'potato', 'roundabout', 'pizza'];
+const expected = [3, 6, 10, 5];
 
-// assert.strictEqual(typeof wordLengths, 'function');
-// const output = wordLengths(words);
-// assert.deepStrictEqual(output, expected);
+assert.strictEqual(typeof wordLengths, 'function');
+const output = wordLengths(words);
+assert.deepStrictEqual(output, expected);
 
 // **************************************************************************************
 
@@ -47,12 +47,12 @@ function sumAllNumbers(array) {
   return sumAll;
 }
 
-// const numbers = [9, 23, 10, 3, 8];
-// const expected = 53;
-// const output = sumAllNumbers(numbers);
+const numbers = [9, 23, 10, 3, 8];
+const expected = 53;
+const output = sumAllNumbers(numbers);
 
-// assert.strictEqual(typeof sumAllNumbers, 'function');
-// assert.strictEqual(output, expected);
+assert.strictEqual(typeof sumAllNumbers, 'function');
+assert.strictEqual(output, expected);
 
 // **************************************************************************************
 
