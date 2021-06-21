@@ -101,3 +101,22 @@ assert.strictEqual(myFizzBuzz(2), 2);
 
 // Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado
 assert.strictEqual(myFizzBuzz('3'), false);
+
+// ****************************************************************************************************************************
+
+const obj1 = {
+  title: 'My Title',
+  description: 'My Description',
+};
+
+const obj2 = {
+  description: 'My Description',
+  title: 'My Title',
+};
+
+const obj3 = {
+  title: 'My Different Title',
+  description: 'My Description',
+};
+
+// implemente seus testes aqui
