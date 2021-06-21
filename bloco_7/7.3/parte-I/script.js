@@ -63,6 +63,7 @@ function myRemoveWithoutCopy(arr, item) {
   return arr;
 }
 
+// TESTES UNITÁRIOS
 // 1. Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 3) retorna o array esperado
 // const testList = [1, 2, 3, 4];
 // assert.deepStrictEqual(myRemoveWithoutCopy(testList, 3), [1, 2, 4]);
@@ -87,6 +88,7 @@ function myFizzBuzz(num) {
   return num;
 }
 
+// TESTES UNITÁRIOS
 // 1. Faça uma chamada com um número divisível por 3 e 5 e verifique se o retorno é o esperado
 assert.strictEqual(myFizzBuzz(15), 'fizzbuzz');
 
@@ -119,4 +121,7 @@ const obj3 = {
   description: 'My Description',
 };
 
-// implemente seus testes aqui
+// TESTES UNITÁRIOS
+assert.deepStrictEqual(obj1, obj2);
+assert.notDeepStrictEqual(obj1, obj3);
+assert.notDeepStrictEqual(obj2, obj3);
