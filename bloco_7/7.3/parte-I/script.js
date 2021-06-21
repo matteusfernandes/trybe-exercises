@@ -98,3 +98,6 @@ assert.strictEqual(myFizzBuzz(5), 'buzz');
 
 // Faça uma chamada com um número que não é divisível por 3 ou 5 e verifique se o retorno é o esperado
 assert.strictEqual(myFizzBuzz(2), 2);
+
+// Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado
+assert.strictEqual(myFizzBuzz('3'), false);
