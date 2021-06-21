@@ -63,16 +63,28 @@ function myRemoveWithoutCopy(arr, item) {
   return arr;
 }
 
-// implemente seus testes aqui
 // 1. Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 3) retorna o array esperado
-const testList = [1, 2, 3, 4];
-assert.deepStrictEqual(myRemoveWithoutCopy(testList, 3), [1, 2, 4]);
+// const testList = [1, 2, 3, 4];
+// assert.deepStrictEqual(myRemoveWithoutCopy(testList, 3), [1, 2, 4]);
 
 // 2. Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 3) não retorna o array [1, 2, 3, 4]
-assert.notDeepStrictEqual(myRemoveWithoutCopy(testList, 3), [1, 2, 3, 4]);
+// assert.notDeepStrictEqual(myRemoveWithoutCopy(testList, 3), [1, 2, 3, 4]);
 
 // 3. Faça uma chamada para a função myRemoveWithoutCopy e verifique se o array passado por parâmetro sofreu alterações
 // assert.deepStrictEqual(myRemoveWithoutCopy(testList, 1), [2, 3, 4]);
 
 // 4. Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 5) retorna o array esperado
-assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4]);
+// assert.deepStrictEqual(myRemoveWithoutCopy([1, 2, 3, 4], 5), [1, 2, 3, 4]);
+
+// ****************************************************************************************************************************
+
+// FUNÇÃO myFizzBuzz
+function myFizzBuzz(num) {
+  if (typeof num !== 'number') return false;
+  if (num % 3 === 0 && num % 5 === 0) return 'fizzbuzz';
+  if (num % 3 === 0) return 'fizz';
+  if (num % 5 === 0) return 'buzz';
+  return num;
+}
+
+// 1. Faça uma chamada com um número divisível por 3 e 5 e verifique se o retorno é o esperado
