@@ -29,9 +29,23 @@ function wordLengths(array) {
   return newArray;
 }
 
-const words = ['sun', 'potato', 'roundabout', 'pizza'];
-const expected = [3, 6, 10, 5];
+// const words = ['sun', 'potato', 'roundabout', 'pizza'];
+// const expected = [3, 6, 10, 5];
 
-assert.strictEqual(typeof wordLengths, 'function');
-const output = wordLengths(words);
-assert.deepStrictEqual(output, expected);
+// assert.strictEqual(typeof wordLengths, 'function');
+// const output = wordLengths(words);
+// assert.deepStrictEqual(output, expected);
+
+// **************************************************************************************
+
+// FUNÇÃO sumAllNumbers
+function sumAllNumbers() {
+
+}
+
+const numbers = [9, 23, 10, 3, 8];
+const expected = 53;
+const output = sumAllNumbers(numbers);
+
+assert.strictEqual(typeof sumAllNumbers, 'function');
+// assert.strictEqual(output, expected);
