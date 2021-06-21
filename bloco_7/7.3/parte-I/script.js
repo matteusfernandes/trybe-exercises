@@ -64,3 +64,6 @@ function myRemoveWithoutCopy(arr, item) {
 }
 
 // implemente seus testes aqui
+// 1. Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 3) retorna o array esperado
+const testList = [1, 2, 3, 4];
+assert.deepStrictEqual(myRemoveWithoutCopy(testList, 3), [1, 2, 4]);
