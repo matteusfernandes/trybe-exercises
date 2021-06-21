@@ -39,8 +39,12 @@ function wordLengths(array) {
 // **************************************************************************************
 
 // FUNÇÃO sumAllNumbers
-function sumAllNumbers() {
-
+function sumAllNumbers(array) {
+  let sumAll = 0;
+  for (key in array) {
+    sumAll += array[key];
+  }
+  return sumAll;
 }
 
 const numbers = [9, 23, 10, 3, 8];
@@ -48,4 +52,4 @@ const expected = 53;
 const output = sumAllNumbers(numbers);
 
 assert.strictEqual(typeof sumAllNumbers, 'function');
-// assert.strictEqual(output, expected);
+assert.strictEqual(output, expected);
