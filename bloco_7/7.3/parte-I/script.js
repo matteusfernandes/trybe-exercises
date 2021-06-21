@@ -12,3 +12,6 @@ function sum(a, b) {
 
 // 1. Teste se o retorno de sum(4, 5) é 9
 assert.strictEqual(sum(4,5), 9);
+
+// Teste se o retorno de sum(0, 0) é 0
+assert.strictEqual(sum(0, 0), 0);
