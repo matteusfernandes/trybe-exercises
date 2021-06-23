@@ -53,21 +53,21 @@ const mageDamage = () => {
 
 const gameActions = {
 	// 1 - Crie a primeira HOF que compõe o objeto gameActions . Ela será a função que simula o turno do personagem warrior . Esta HOF receberá como parâmetro a função que calcula o dano deferido pelo personagem warrior e atualizará os healthPoints do monstro dragon . Além disto ela também deve atualizar o valor da chave damage do warrior .
-	warriorTurn: () => {
-		const warriorDmgTurn = warriorDamage();
+	warriorTurn: (warriorDmg) => {
+		const warriorDmgTurn = warriorDmg();
 		dragon.healthPoints -= warriorDmgTurn;
 		warrior.damage = warriorDmgTurn;
 	},
 	// 2 - Crie a segunda HOF que compõe o objeto gameActions . Ela será a função que simula o turno do personagem mage . Esta HOF receberá como parâmetro a função que calcula o dano deferido pelo personagem mage e atualizará os healthPoints do monstro dragon . Além disto ela também deve atualizar o valor das chaves damage e mana do mage.
-	mageTurn: () => {
-		const mageDmgTurn = mageDamage();
+	mageTurn: (mageDmg) => {
+		const mageDmgTurn = mageDmg();
 		dragon.healthPoints -= mageDmgTurn.value;
 		mage.damage = mageDmgTurn.value;
 		mage.mana -= mageDmgTurn.mana;
 	},
 	// 3 - Crie a terceira HOF que compõe o objeto gameActions . Ela será a função que simula o turno do monstro dragon . Esta HOF receberá como parâmetro a função que calcula o dano deferido pelo monstro dragon e atualizará os healthPoints dos personagens mage e warrior . Além disto ela também deve atualizar o valor da chave damage do monstro.
-	dragonTurn: () => {
-		const dragonDmgTurn = dragonDamage();
+	dragonTurn: (dragonDmg) => {
+		const dragonDmgTurn = dragonDmg();
 		dragon.damage = dragonDmgTurn;
 		warrior.healthPoints -= dragonDmgTurn;
 		mage.healthPoints -= dragonDmgTurn;
@@ -80,9 +80,9 @@ let turn = 1;
 
 const game = () => {
 	console.log(`Turno ${turn}:`);
-	gameActions.warriorTurn(warriorDamage());
-	gameActions.mageTurn(mageDamage());
-	gameActions.dragonTurn(dragonDamage());
+	gameActions.warriorTurn(warriorDamage);
+	gameActions.mageTurn(mageDamage);
+	gameActions.dragonTurn(dragonDamage);
 	if (dragon.healthPoints > 0) {
     console.log(gameActions.endTurn());
 		turn += 1;
@@ -92,5 +92,4 @@ const game = () => {
 		return console.log('O dragão morreu!');
 	}
 };
-
 game();
