@@ -45,3 +45,9 @@ const mageDamage = () => {
   }
   return damageCaused;
 }
+
+// ************************ PARTE II ************************
+
+const gameActions = {
+  // Crie as HOFs neste objeto.
+};
