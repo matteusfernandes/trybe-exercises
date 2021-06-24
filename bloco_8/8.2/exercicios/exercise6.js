@@ -68,6 +68,13 @@ const expectedResult = true;
 
 function someBookWasReleaseOnThe80s() {
   // escreva seu código aqui
+  let result = false;
+  books.find((book) => {
+    if (book.releaseYear >= 1980 && book.releaseYear <= 1989){
+      result = true; 
+    }
+  });
+  return result;
 }
 
 assert.strictEqual(someBookWasReleaseOnThe80s(), expectedResult);
