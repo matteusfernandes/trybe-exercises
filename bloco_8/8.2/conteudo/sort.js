@@ -11,3 +11,8 @@ const people = [
 people.sort((people1, people2) => people1.age - people2.age);
 
 console.log(people);
+
+// 2 - Modifique o sort do exercício anterior para que ordene o array pela idade das pessoas em ordem decrescente .
+people.sort((people1, people2) => people2.age - people1.age);
+
+console.log(people);
