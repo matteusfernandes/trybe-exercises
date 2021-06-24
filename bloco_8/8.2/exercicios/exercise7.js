@@ -68,6 +68,17 @@ const expectedResult = false;
 
 function authorUnique() {
   // escreva seu código aqui
+  let result = true;
+  let year;
+  books.every((book) => {
+    if (year === undefined) {
+      year = book.author.birthYear;
+    }
+    if (book.author.birthYear === year){
+      result = false;
+    }
+  });
+  return result;
 }
 
 assert.strictEqual(authorUnique(), expectedResult);
