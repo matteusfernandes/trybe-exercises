@@ -63,7 +63,7 @@ const books = [
   },
 ];
 
-// Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
+// 4 - Crie um array ordenado pelos livros com mais de 60 anos de publicação e ordene-o pelo livro mais velho.
 const expectedResult = [
   {
     id: 6,
@@ -90,6 +90,8 @@ const expectedResult = [
 
 function oldBooksOrdered() {
   // escreva seu código aqui
+  const oldBooks = books.filter((book) => (2021 - book.releaseYear) > 60);
+  return oldBooks.sort((bookAge1, bookAge2) => bookAge1.releaseYear - bookAge2.releaseYear);
 }
 
 assert.deepStrictEqual(oldBooksOrdered(), expectedResult);
