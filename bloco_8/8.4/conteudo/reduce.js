@@ -28,7 +28,5 @@ const sumEvenWithFilterAndReduce = (arr) => {
 console.log(sumEvenWithFilterAndReduce(numbers));
 
 // USANDO REDUCE
-const sumEvenWithReduce = (arr) => {
-  return arr.reduce((result, number) => (number % 2 === 0) ? result + number : result);
-};
+const sumEvenWithReduce = (arr) => arr.reduce((result, number) => (number % 2 === 0) ? result + number : result);
 console.log(sumEvenWithReduce(numbers));
