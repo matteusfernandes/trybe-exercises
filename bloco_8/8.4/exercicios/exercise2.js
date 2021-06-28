@@ -68,6 +68,11 @@ const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Fra
 
 function reduceNames() {
   // escreva seu código aqui
-}
+  const authorsNames = books.reduce((result, current, index, array) => {
+    if (index === (array.length - 1)) return `${result} ${current.author.name}.`;
+    return `${result} ${current.author.name},`;
+  },'');
 
+  return authorsNames.trim();
+}
 assert.strictEqual(reduceNames(), expectedResult);
