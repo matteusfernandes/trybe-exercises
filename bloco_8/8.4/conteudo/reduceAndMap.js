@@ -73,3 +73,12 @@ const estudantes = [
     ],
   },
 ];
+
+const bestSubject = (best, actual) => (best.nota > actual.nota) ? best : actual;
+
+const checkSubject = (arr) => arr.map((student) => ({
+  name: student.nome,
+  materia: student.materias.reduce(bestSubject).name
+}));
+
+console.log(checkSubject(estudantes));
