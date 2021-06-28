@@ -9,6 +9,11 @@ const names = [
 
 function containsA() {
   // escreva seu código aqui
+  return names.reduce((total, current) =>
+     total + current.split('').reduce((acc, cc) => {
+        if (cc === 'a' || cc === 'A') return acc + 1;
+        return acc;
+     }, 0), 0);
 }
-
-assert.deepStrictEqual(containsA(), 20);
+console.log(containsA());
+// assert.deepStrictEqual(containsA(), 20);
