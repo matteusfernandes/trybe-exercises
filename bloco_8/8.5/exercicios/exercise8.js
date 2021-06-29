@@ -3,6 +3,7 @@
 const assert = require('assert');
 
 // escreva greet abaixo
+const greet = (nome, greetings = 'Hi') => `${greetings} ${nome}`;
 
 assert.strictEqual(greet('John'), 'Hi John');
 assert.strictEqual(greet('John', 'Good morning'), 'Good morning John');
