@@ -3,6 +3,7 @@
 const assert = require('assert');
 
 // escreva sum abaixo
+const sum = (...values) => values.reduce((total, currentValue) => total + currentValue,0);
 
 assert.strictEqual(sum(), 0);
 assert.strictEqual(sum(1), 1);
