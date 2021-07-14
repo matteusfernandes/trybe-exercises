@@ -21,10 +21,21 @@ const getListAnimals = (type) => (
   findAnimalsByType(type).then(list => list)
 );
 
-const findAnimalByName = (name) => {
-  // Adicione o código aqui.
-};
+const findAnimalByName = (name) => (
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const animal = Animals.find((animal) => animal.name === name);
+      if (animal) {
+        return resolve(animal);
+      };
+      const messageError = 'Nenhum animal com esse nome!';
+      return reject(messageError);
+    }, 100);
+  })
+);
 
 const getAnimal = (name) => {
-  // Adicione o código aqui.
+  return findAnimalByName(name).then(animal => animal);
 };
+
+module.exports = { getAnimal }

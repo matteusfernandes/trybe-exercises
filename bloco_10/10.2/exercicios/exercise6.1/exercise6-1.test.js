@@ -1,3 +1,4 @@
+const { getAnimal } = require("./exercise6-1");
 
 describe('Testando promise - findAnimalByName', () => {
   describe('Quando existe o animal com o nome procurado', () => {
