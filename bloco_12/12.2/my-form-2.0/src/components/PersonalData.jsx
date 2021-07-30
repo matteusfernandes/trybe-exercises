@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import estados from '../data';
 import Name from './Name';
 import Email from './Email'
 import Cpf from './Cpf'
 import Adress from './Adress'
 import City from './City'
+import Estado from './Estado'
+import Tipo from './Tipo'
 
 class PersonalData extends Component {
   constructor() {
@@ -18,6 +21,8 @@ class PersonalData extends Component {
       cpf: 0,
       adress: '',
       city: '',
+      estado: '',
+      tipo: '',
     }
   }
 
@@ -55,6 +60,8 @@ class PersonalData extends Component {
         <Cpf value={this.state.cpf} handleChange={this.handleChange} />
         <Adress value={this.state.adress} handleChange={this.handleChange} />
         <City value={this.state.city} handleBlur={this.handleBlur} handleChange={this.handleChange} />
+        <Estado value={this.state.estado} handleChange={this.handleChange} estados={estados} />
+        <Tipo value={this.state.tipo} handleChange={this.handleChange} />
       </fieldset>
     );
   }
