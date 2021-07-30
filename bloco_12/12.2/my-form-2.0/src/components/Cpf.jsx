@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 
-class Adress extends Component {
+class Cpf extends Component {
   render() {
 
     const { value, handleChange } = this.props;
     
     return (
       <label>
-        Endereço:
+        CPF:
         <input
           type="text"
-          name="adress"
-          id="adress"
-          maxLength="200"
+          name="cpf"
+          id="cpf"
+          maxLength="11"
           value={value}
           onChange={handleChange}
           required
@@ -22,4 +22,4 @@ class Adress extends Component {
   }
 }
 
-export default Adress;
+export default Cpf;
