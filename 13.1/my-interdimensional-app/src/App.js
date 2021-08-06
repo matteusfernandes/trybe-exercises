@@ -18,6 +18,10 @@ class App extends Component {
     })
   }
 
+  componentDidMount() {
+    this.fetchCharacters();
+  }
+
   render() {
     const { characters } = this.state;
 
