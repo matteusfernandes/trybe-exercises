@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Emprego</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="job-form-header box-style">
+  <h1>Cadastro de Currículo</h1>
+  <p><em>Preencha os campos abaixo para submeter o seu currículo.</em></p>
+</header>
+
+<div class="box-style" id="main-content">
+  <form action="" method="GET">
+    <div class="line-content">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+  
+        <label for="full-name">Nome</label>
+        <input type="text" name="fullname" id="full-name" maxlength="40" class="texts-inputs" required>
+        
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" class="medium-inputs" maxlength="50" required>
+  
+        <label for="cpf-number">CPF</label>
+        <input type="text" name="cpf" id="cpf-number" maxlength="11" class="short-inputs" placeholder="000000000" required>
+  
+        <label for="full-adress">Endereço</label>
+        <input type="text" name="full-adress" id="full-adress" maxlength="200" class="texts-inputs" required>
+  
+        <label for="city">Cidade</label>
+        <input type="text" name="city" id="city" maxlength="28" class="city-input" required>
+  
+        <label for="states">Estado</label>
+        <select name="state" id="states" required></select>
+  
+        <label for="house-type">Casa</label>
+        <input type="radio" name="home-type" id="house-type" value="house" required checked>
+  
+        <label for="apt-type">Apartamento</label>
+        <input type="radio" name="home-type" id="apt-type" value="apt" required>
+      </fieldset>
+    </div>
+  
+    <div class="line-content">
+      <fieldset>
+        <legend>Dados do Seu Último Emprego</legend>
+  
+        <label for="resume">Resumo do Currículo</label>
+        <textarea name="resume-summary" id="resume" class="texts-inputs" maxlength="1000" required></textarea>
+  
+        <label for="office">Cargo</label>
+        <input type="text" name="position-held" id="office" class="texts-inputs" maxlength="40" required>
+  
+        <label for="description">Descrição do Cargo</label>
+        <input type="text" name="job-description" id="description" class="texts-inputs" maxlength="500" required>
+  
+        <!-- <label for="start-date">Data de Início</label>
+        <input type="date" name="start-date" id="start-date" class="short-inputs" required> -->
+  
+        <label for="start-date">Data de Início</label>
+        <input type="text" name="start-date" id="start-date" class="short-inputs" maxlength="8" placeholder="DDMMYYYY" required>
+      </fieldset>
+    </div>
+    
+    <div class="line-content">
+      <button id="send-button">Enviar</button>
+      <button id="clear-button" type="reset">Limpar Formulário</button>
+    </div>
+  </form>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

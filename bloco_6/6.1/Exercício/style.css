@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(93, 96, 99);
+  background-color: rgb(234, 237, 240);
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.job-form-header {
+  text-align: center;
+}
+
+.box-style {
+  background-color: rgb(246, 247, 248);
+  border: 1px solid rgb(214, 217, 220);
+  border-radius: 3px;
+  width: 80%;
+  padding: 50px;
+  margin: 40px auto;
+}
+
+fieldset {
+  padding: 10px;
+}
+
+.line-content {
+  margin: 20px;
+}
+
+.texts-inputs {
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid rgb(214, 217, 220);
+}
+
+.medium-inputs {
+  width: 60%;
+  padding: 7px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid rgb(214, 217, 220);
+}
+
+.short-inputs {
+  width: 30%;
+  padding: 7px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid rgb(214, 217, 220);
+}
+
+.city-input {
+  width: 55%;
+  padding: 7px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid rgb(214, 217, 220);
+}
+
+.line-content input {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 8px;
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+}

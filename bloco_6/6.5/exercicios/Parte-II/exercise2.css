@@ -1,0 +1,214 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+header {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  width: 100%;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  list-style: none;
+  padding: 0 10px;
+}
+
+.main-container {
+  display: flex;
+}
+
+.aside-one {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+}
+
+.aside-one ul {
+  list-style: none;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.aside-one ul li {
+  margin-bottom: 5px;
+}
+
+.aside-one h2 {
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  text-align: justify;
+}
+
+.main-content h1 {
+  text-align: center;
+}
+
+.aside-two {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+}
+
+.aside-two ul {
+  list-style: none;
+  margin-right: 0px;
+}
+
+.aside-two ul li {
+  margin-bottom: 5px;
+}
+
+.aside-two h2 {
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+footer h3 {
+  font-size: 15px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    justify-content: center;
+  }
+
+  header p {
+    font-size: 1.5em;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .aside-one h2 {
+    font-size: 0.8em;
+  }
+
+  .aside-one ul {
+    padding: 0 0 0 10px;
+  }
+
+  .aside-one ul li {
+    font-size: 10px;
+  }
+
+  .aside-two h2 {
+    font-size: 0.8em;
+  }
+
+  .aside-two ul {
+    padding: 0 0 0 10px;
+  }
+
+  .aside-two ul li {
+    font-size: 10px;
+  }
+
+  .main-content h1 {
+    font-size: 1em;
+  }
+
+  .main-content p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width:800px) {
+  header nav ul li{
+    font-size: 0.8em;
+  }
+
+  header p {
+    font-size: 1.5em;
+  }
+
+  .aside-one h2 {
+    font-size: 1em;
+  }
+
+  .aside-one ul {
+    padding: 0 0 0 15px;
+  }
+
+  .aside-one ul li {
+    font-size: 13px;
+  }
+
+  .aside-two h2 {
+    font-size: 1em;
+  }
+
+  .aside-two ul {
+    padding: 0 0 0 15px;
+  }
+
+  .aside-two ul li {
+    font-size: 13px;
+  }
+
+  .main-content h1 {
+    font-size: 1.3em;
+  }
+
+  .main-content p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+
+  header p {
+    font-size: 2.5em;
+  }
+
+  .aside-one h2 {
+    font-size: 1em;
+  }
+
+  .aside-one ul li {
+    font-size: 15px;
+  }
+
+  .aside-two h2 {
+    font-size: 1em;
+  }
+
+  .aside-two ul li {
+    font-size: 15px;
+  }
+
+  .main-content h1 {
+    font-size: 1.5em;;
+  }
+}
